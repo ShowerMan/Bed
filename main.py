@@ -1,3 +1,23 @@
+from flask import Flask, render_template
+from threading import Thread
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return '''<body style="margin: 0; padding: 0;">
+    <iframe width="100%" height="100%" src="https://axocoder.vercel.app/" frameborder="0" allowfullscreen></iframe>
+  </body>'''
+
+def run():
+    app.run(host='0.0.0.0', port=8080)
+
+def keep_alive():  
+    t = Thread(target=run)
+    t.start()
+
+keep_alive()
+print("Server Running Because of Tecak")
 import os, requests, discord, time, random, threading, user_agent, tls_client, uuid, asyncio, hashlib, sys, json
 from threading import Thread
 from flask import request, Flask, jsonify
@@ -246,7 +266,7 @@ class Discord_Bot:
         self.blacklistedusers = [""]
         self.serveridjoin = "input/stock.txt"
         self.tokstock = "input/tokens.txt"
-        self.guilds_to_keep = [1180909810301026374]
+        self.guilds_to_keep = [1194415021892059186]
         self.allowed_role_ids = ["Owner", "#", "*"]
 
         self.webhook = webhook
@@ -273,7 +293,7 @@ class Discord_Bot:
         self.run_bot()
 
     def commands(self):
-        @self.bot.command()
+        @self.bot.command(name="TheKing", description="sends the bot link.")
         async def add(ctx):
             class SimpleView(discord.ui.View):
                 def __init__(self):
@@ -290,7 +310,7 @@ class Discord_Bot:
         async def on_ready():
             print(ownername)
             await self.bot.change_presence(
-                activity=discord.Game(name=""), status=discord.Status.do_not_disturb
+                activity=discord.Game(name="Fastly On Top"), status=discord.Status.do_not_disturb
             )
             pass
 
@@ -453,7 +473,7 @@ class Discord_Bot:
                     response = requests.post(self.webhook, json=payload)
                     self.blacklistt.remove(userid)
                     embed = discord.Embed(description="**Whitelisted**", color=0x2F3136)
-                    embed.set_thumbnail(url=logo)
+                    embed.set_thumbnail(url=logo),
                     embed.add_field(
                         name="**Whitelisted**",
                         value=f"You Have Whitelisted: {userid}",
@@ -955,7 +975,7 @@ class Discord_Bot:
                                 "inline": False,
                             }
                         ],
-                        "footer": {"text": "Powered .gg/", "icon_url": logo},
+                        "footer": {"text": "Powered .gg/memberrs", "icon_url": logo},
                     }
                 ]
             }
