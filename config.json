@@ -1,16 +1,16 @@
 {
-    "token": "",
-    "farmch": "",
-   "logo": "",
+    "token": "MTIwMTEwODc2Nzg2NjExNDExOA.GCNgAv.JHYQeUf8WVvNUPQn7LqtSt-yCSJtKsX5pOpmG4",
+    "farmch": "1201110588366000168",
+   "logo": "https://media.discordapp.net/attachments/1198780768705577040/1201108474881388624/Lightning_Network.svg.png?ex=65c89e6f&is=65b6296f&hm=5dbc56d14ddd5fe6459a04b519458efa82b08b61ad58d16edd156e9017233f75&",
     "footer": ".",
-    "addl": "",
-    "addch": "",
-    "webhook": "",
+    "addl": "https://discord.com/api/oauth2/authorize?client_id=1201108767866114118&permissions=8&scope=bot",
+    "addch": "1201110345670991922",
+    "webhook": "https://discord.com/api/webhooks/1201439523020738670/al25-6zMfjSGn6E58YPCd0MIhRBYauMgcFct1X3bycIIoNF6Ujn65ENR6KGM4P2eFVTn",
     "guildtosave": "", 
-    "ownername": "Skidders on top ez",
+    "ownername": "Tecak",
 
 
-    "token2": "il token 2 deve essere uguale al token 1",
-    "clid": "",
-    "clsec": ""
+    "token2": "MTIwMTEwODc2Nzg2NjExNDExOA.GCNgAv.JHYQeUf8WVvNUPQn7LqtSt-yCSJtKsX5pOpmG4",
+    "clid": "1201108767866114118",
+    "clsec": "Yk2IpKNp2TrZMOAA8Wns93sUt5EmcdV_"
 }
