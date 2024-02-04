@@ -282,18 +282,18 @@ class Discord_Bot:
         self.client_id = clientid
         self.client_secret = client_secret
         self.roles = {
-            "Good": 50,
-            "Premium": 30,
+            "Platinum": 50,
+            "Diamond": 30,
             "Gold": 20,
             "Silver": 15,
             "Bronze": 10,
-            "Members": 3,
+            "fastly": 3,
         }
         os.system("cls")
         self.run_bot()
 
     def commands(self):
-        @self.bot.command(name="TheKing", description="sends the bot link.")
+        @self.bot.command(name="send", description="sends the bot link.")
         async def add(ctx):
             class SimpleView(discord.ui.View):
                 def __init__(self):
@@ -310,7 +310,7 @@ class Discord_Bot:
         async def on_ready():
             print(ownername)
             await self.bot.change_presence(
-                activity=discord.Game(name="Fastly On Top"), status=discord.Status.do_not_disturb
+                activity=discord.Game(name=".gg/memberrs"), status=discord.Status.do_not_disturb
             )
             pass
 
